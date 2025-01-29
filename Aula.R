@@ -68,3 +68,11 @@ vendas_jan[3]
 #Sempre vou acessar os elementos da matriz com colchetes, quando eu deixo o espaço
 #vazio após a vírgula, o R entende que é para retornar a linha inteira
 matriz_vendas[4, ]
+matriz_vendas['Luiz Felipe', ]
+
+#Calculando o faturamento do colaborador - Qual deles teve o maior faturamento
+rowSums(matriz_vendas)
+
+#Qual o mês com maior número de vendas
+colSums(matriz_vendas)
+
