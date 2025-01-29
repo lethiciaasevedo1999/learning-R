@@ -60,3 +60,11 @@ colnames(matriz_vendas) <- meses
 
 # Exibir a matriz
 matriz_vendas
+
+#Acessando os elementos dentro dos vetores
+vendas_jan[3]
+
+#Encontrando todos os dados do Luiz Felipe
+#Sempre vou acessar os elementos da matriz com colchetes, quando eu deixo o espaço
+#vazio após a vírgula, o R entende que é para retornar a linha inteira
+matriz_vendas[4, ]
