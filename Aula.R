@@ -76,3 +76,14 @@ rowSums(matriz_vendas)
 #Qual o mês com maior número de vendas
 colSums(matriz_vendas)
 
+#Criando uma nova coluna com os resultados de cada funcionário no total
+#cbind para adicionar uma nova coluna
+total_colab <- rowSums(matriz_vendas)
+matriz_total_colab <- cbind(matriz_vendas,  total_colab)
+matriz_total_colab #exibindo a matriz com a nova coluna
+
+#Fazendo o mesmo com os meses 
+#rbind para adicionar uma nova linha
+total_meses <- colSums(matriz_vendas)
+matriz_total_meses <- rbind(matriz_vendas, total_meses)
+matriz_total_meses
