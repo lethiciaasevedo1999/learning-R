@@ -45,3 +45,16 @@ mean(dados_vendas[, 3])
 #Existe uma diferença muito grande entre a média e a mediana das receitas?
 #mediana
 median(dados_vendas[, 3])
+
+
+
+#Qual o produto mais caro e qual o mais barato?' 
+#Produto com o valor mais alto
+
+valor_maior <- which.max(dados_vendas[, 1])
+dados_vendas[valor_maior, 1]
+
+#Produto com o menor valor
+valor_menor <- which.min(dados_vendas[, 1])
+valor_menor
+dados_vendas[valor_menor, 1]
