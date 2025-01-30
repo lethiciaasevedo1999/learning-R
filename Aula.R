@@ -87,3 +87,4 @@ matriz_total_colab #exibindo a matriz com a nova coluna
 total_meses <- colSums(matriz_vendas)
 matriz_total_meses <- rbind(matriz_vendas, total_meses)
 matriz_total_meses
+
