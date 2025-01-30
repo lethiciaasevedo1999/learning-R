@@ -36,3 +36,12 @@ resultado_porcentagem
 
 #Arrendondando com a função round
 round(resultado_porcentagem)
+
+
+#Qual a receita média das vendas?
+#média
+mean(dados_vendas[, 3])
+
+#Existe uma diferença muito grande entre a média e a mediana das receitas?
+#mediana
+median(dados_vendas[, 3])
