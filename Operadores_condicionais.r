@@ -53,3 +53,28 @@ if(total_somado[3] > 3000) {
     paste('Total em estoque está abaixo de 3000. Valor total: ', total_somado[3])
 }
 
+
+#Utilizando estrutura de repetição FOR
+#Aplicando 10% de desconto em cada produto
+
+for(i in 1: nrow(matriz_estoque)) {
+    matriz_estoque[i, 1] <- matriz_estoque[i, 1] * 0.9
+}
+
+#Utilizando WHILE
+#Qual o produto mais vendido
+
+indice_mais_vendido <- 0 
+quantidade_mais_vendida <- 0
+i <- 1
+
+while(i <= nrow(matriz_estoque) & quantidade_mais_vendida < 30){
+    if(matriz_estoque[i, 2] > quantidade_mais_vendida){
+        quantidade_mais_vendida <- matriz_estoque[i, 2]
+        indice_mais_vendido <- i
+    }
+    i <- i+1
+}
+
+cat('Produto mais vendido: ', indice_mais_vendido)
+cat('\n Total em estoque: ', matriz_estoque[indice_mais_vendido, 2])
